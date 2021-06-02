@@ -1,0 +1,1815 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav
+{
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    align-items: center; 
+}
+.navupr
+{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    border: 1px solid cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navpt1
+{
+    height: 40%;
+    width: 220px;
+    border: 1px solid red;
+    background-image: url("logo.png");
+    background-size: 100% 100%;
+}
+.navpt2
+{
+    height: 60%;
+    width: 600px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+}
+.ul1
+{
+    /* border: 1px solid; */
+    list-style: none;
+    display: flex;
+    width: 100%;
+    /* height: 50px; */
+    justify-content: space-between;
+    align-items: center;
+}
+.li1
+{
+    position: relative;
+    height: 30px;
+    padding: 0px 7px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #7F4DFF;
+    color: white;
+}
+.li1:hover
+{
+    cursor: pointer;
+}
+.li2
+{
+    position: relative;
+    height: 30px;
+    padding: 0px 7px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.li2:hover 
+{
+    background-color: #7F4DFF;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: white;
+}
+.navpt3
+{
+    height: 40%;
+    width: 150px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navpt31
+{
+    height: 25px;
+    width: 25px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    background-color: red;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.navpt31:hover
+{
+    cursor: pointer;
+}
+.navpt31:hover .a
+{
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
+}
+.a
+{
+    color: white;
+    transition-duration: 0.4s; 
+}
+.li1pt1
+{
+    position: absolute;
+    list-style: none;
+    border: 2px solid red;
+    top: 80px;
+    width: 160px;
+    height: 305px;
+    text-align: center; 
+    background-color: white;
+    visibility: hidden;
+    z-index: 10;   
+}
+.li1pt1 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.li1 li:hover
+{
+    color: red;
+    transition-duration: 0.2s;
+}
+.li1 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    left:0;
+    opacity: 1;
+}
+.li1 li:hover::after
+{
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 0;
+} 
+.arrow
+{
+    position: absolute;
+    color: black;
+    right: 7px;
+}
+.li1:hover .li1pt1
+{
+    visibility: visible;
+    transform: translateY(-50px);
+    transition-duration: 0.5s;
+}
+.hsul1
+{
+    position: absolute;
+    list-style: none;
+    /* left:50px; */
+    top:50px;
+    left: 160px;
+    width:160px;
+    height:253px;
+    border: 2px solid red;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: white;
+    z-index: 10;
+}
+.hsul1 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* transition-duration: 0.2s; */
+}
+.hsul1 li:hover
+{
+    color: red;
+    transition-duration: 0.2s;
+}
+.hsul1 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    left: -100%;
+    opacity: 1;
+}
+.hsul1 li:hover::after
+{
+    left: 0;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.hs:hover .hsul1
+{
+    visibility: visible;
+    transform: translateY(-50px);
+    transition-duration: 0.4s;
+}
+.li2ul
+{
+    position: absolute;
+    list-style: none;
+    top: 50px;
+    width:160px;
+    height:100px;
+    border: 2px solid red;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 10;
+    background-color: white;
+}
+.li2ul li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* transition-duration: 0.1s; */
+}
+.li2ul li::after
+{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    right: 100%;
+    opacity: 1;
+}
+.li2ul li:hover::after
+{
+    right: 0;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.li2ul li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.li2:hover .li2ul
+{
+    visibility: visible;
+    transform: translateY(-20px);
+    transition-duration: 0.3s;
+}
+.li2ul2
+{
+    position: absolute;
+    list-style: none;
+    top: 50px;
+    width:200px;
+    height:253px;
+    border: 2px solid red;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 10;
+    background-color: white;
+}
+.li2ul2 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* transition-duration: 0.1s; */
+}
+.li2ul2 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    right: 100%;
+    opacity: 1;
+}
+.li2ul2 li:hover::after
+{
+    right: 0;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.li2ul2 li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.li2:hover .li2ul2
+{
+    visibility: visible;
+    transform: translateY(-20px);
+    transition-duration: 0.3s;
+}
+.li2ul3
+{
+    position: absolute;
+    list-style: none;
+    top: 50px;
+    width:200px;
+    height:200px;
+    border: 2px solid red;
+    /* overflow: hidden; */
+    visibility: hidden;
+    z-index: 10;
+    background-color:white;
+}
+.li2ul3 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.li2ul3 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    left: 0;
+    opacity: 1;
+}
+.li2ul3 li:hover::after
+{
+    width: 100%;
+    left: 0;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.li2ul3 li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.li2:hover .li2ul3
+{
+    visibility: visible;
+    transform: translateY(-20px);
+    transition-duration: 0.3s;
+}
+.li2ul3pt1
+{
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    left: 100%;
+    width:200px;
+    height:253px;
+    border: 2px solid red;
+    overflow: hidden;
+    visibility: hidden;
+}
+.li2ul3pt1 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.li2ul3pt1 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    left: 0;
+    opacity: 1;
+}
+.li2ul3pt1 li:hover::after
+{
+    left: 0;
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.li2ul3pt1 li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.hh:hover .li2ul3pt1
+{
+    visibility: visible;
+    transform: translateY(-35px);
+    transition-duration: 0.3s;
+} 
+.hsul11
+{
+    position: absolute;
+    list-style: none;
+    /* left:50px; */
+    top:50px;
+    left: 200px;
+    width:160px;
+    height:253px;
+    border: 2px solid red;
+    overflow: hidden;
+    background-color: white;
+    visibility: hidden;
+}
+.hsul11 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* transition-duration: 0.2s; */
+}
+.hsul11 li:hover
+{
+    color: red;
+    transition-duration: 0.2s;
+}
+.hsul11 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 100%;
+    background-color: red;
+    left: 0%;
+    opacity: 1;
+}
+.hsul11 li:hover::after
+{
+    left: 0;
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.hhh:hover .hsul11
+{
+    visibility: visible;
+    transform: translateY(-45px);
+    transition-duration: 0.4s;
+}
+.li2ul5
+{
+    position: absolute;
+    list-style: none;
+    top: 23px;
+    width:160px;
+    height:100px;
+    border: 2px solid red;
+    overflow: hidden;
+    left: 200px;
+    visibility: hidden;
+    background-color:white;
+}
+.li2ul5 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* transition-duration: 0.1s; */
+}
+.li2ul5 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 100%;
+    background-color: red;
+    left: 0;
+    opacity: 1;
+}
+.li2ul5 li:hover::after
+{
+    left: 0;
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.li2ul5 li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.bbbb:hover .li2ul5
+{
+    visibility: visible;
+    transform: translateY(-20px);
+    transition-duration: 0.3s;
+}
+.pli2ul3pt1
+{
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    left: 100%;
+    width:200px;
+    height:253px;
+    border: 2px solid red;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 10;
+    background-color: white;
+}
+.li2ul3pt1 li
+{
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: white;
+}
+.pli2ul3pt1 li::after
+{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 100%;
+    background-color: red;
+    left: 0;
+    opacity: 1;
+}
+.pli2ul3pt1 li:hover::after
+{
+    left: 0;
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.pli2ul3pt1 li:hover
+{
+    color:red;
+    transition-duration: 0.1s;
+}
+.pf:hover .pli2ul3pt1
+{
+    visibility: visible;
+    transform: translateY(-36px);
+    transition-duration: 0.3s;
+}
+.main5r4c
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5,400px);
+    grid-template-columns: repeat(4,25%);
+    border: 1px solid;
+}
+a{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color:black;
+}
+.a1
+{
+    position: relative;
+    border: 1px solid;
+    grid-area: 1/1/3/3;
+    overflow: hidden;   
+}
+.smile
+{
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    transition-duration: 0.8s;
+}
+.a1:hover .smile
+{
+    transform: scale(1.2) rotate(5deg);
+    transition-duration: 0.8s;
+}
+.hr1 
+{
+    position: absolute;
+    width: 1px;
+    background-color: gray;
+    height: 50%;
+    outline: none;
+    border: none;
+    top: 5%;
+    right: 10%;
+}
+.hr2 
+{
+    position: absolute;
+    width: 50%;
+    background-color: gray;
+    height: 1px;
+    outline: none;
+    border: none;
+    top: 10%;
+    right: 5%;
+}
+.hr3 
+{
+    position: absolute;
+    width: 1px;
+    background-color: gray;
+    height: 50%;
+    outline: none;
+    border: none;
+    bottom: 5%;
+    left: 10%;
+}
+.hr4 
+{
+    position: absolute;
+    width: 50%;
+    background-color: gray;
+    height: 1px;
+    outline: none;
+    border: none;
+    bottom: 10%;
+    left: 5%;
+}
+.a1hd1
+{
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    font-size: 75px;
+    top: 58%;
+    left: 15%;
+    transition-duration:0.5s;
+}
+.a1hd1:hover
+{
+    cursor: pointer;
+    color: red;
+    transition-duration:0.5s;
+}
+.a1bt1
+{
+    position: absolute;
+    text-transform: capitalize;
+    color:white;
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50px;
+    font-size: 20px;
+    top: 74%;
+    left: 15%;
+    border: 4px solid red;
+    outline: none;
+    transition-duration: 0.5s;
+}
+.a1bt1:hover
+{
+    cursor: pointer;
+    color: red;
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+.a2
+{
+    position: relative;
+    border:1px solid cyan;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+}
+.a2 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a2::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a2::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a2:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a2:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a2icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a2icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a2:hover .a2icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a2:hover .a2icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a2icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a2icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a2icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a2icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.ic1
+{
+    color: red;
+    font-size: 25px;
+}
+.a3
+{
+    position: relative;
+    border:1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.a3 img
+{
+    width: 100%;
+    height: 100%;
+}
+.a3hd1
+{
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    font-size: 65px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.a4
+{
+    position: relative;
+    border:1px solid blue;
+    overflow: hidden;   
+    display: flex;
+    align-items: center;  
+}
+.a4 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a4::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a4::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a4:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a4:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a4icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a4icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a4:hover .a4icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a4:hover .a4icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a4icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a4icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a4icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a4icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a5
+{
+   position: relative;
+   border:1px solid violet; 
+   overflow: hidden;
+   display: flex;
+   align-items: center;  
+}
+.a5 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a5::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a5::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a5:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a5:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a5icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a5icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a5:hover .a5icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a5:hover .a5icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a5icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a5icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a5icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a5icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a6 
+{
+    position: relative;
+    border:1px solid greenyellow; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;      
+}
+.a6 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a6::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a6::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a6:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a6:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a6icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a6icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a6:hover .a6icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a6:hover .a6icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a6icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a6icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a6icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a6icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a7
+{
+    position: relative;
+    border:1px solid brown; 
+    grid-area: 3/3/4/5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;  
+}
+.a7 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a7::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a7::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a7:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a7:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a7icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 300px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a7icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 300px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a7:hover .a7icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a7:hover .a7icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a7icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a7icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a7icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a7icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a8
+{
+    position: relative;
+    border:1px solid #7F4DFF; 
+    grid-area: 4/1/5/3;  
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+}
+.a8 img
+{
+    width: 100%;
+    height: 100%;
+}
+.a8::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a8::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a8:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a8:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a8icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 300px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a8icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 300px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a8:hover .a8icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a8:hover .a8icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a8icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a8icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a8icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a8icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a9
+{
+    position: relative;
+    border:1px solid blanchedalmond;
+    background-image: url("7-1.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+.a9pa1
+{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
+.a9sp1
+{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:sans-serif;
+}
+.a10
+{
+    position: relative;
+    border:1px solid yellowgreen; 
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+}
+.a10 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a10::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a10::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a10:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a10:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.a10icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a10icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a10:hover .a10icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a10:hover .a10icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a10icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a10icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a10icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a10icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a11
+{
+    position: relative;
+    border:1px solid tomato; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.a11 img
+{
+    height: 100%;
+    width: 100%;
+}
+.a12
+{
+    position: relative;
+    border:1px solid gray; 
+    grid-area: 5/1/5/3;
+    overflow: hidden;
+}
+.a12img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+.a12:hover .a12img
+{
+    transform: scale(1.2) rotate(5deg);
+    transition-duration: 0.5s;
+}
+.a12div
+{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* border: 3px solid red; */
+}
+.a12pa1
+{
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+.a12pa12
+{
+    margin-left: 11.5%;
+}
+.a12sp1
+{
+    font-size: 80px;
+    color: black;
+    font-weight: bolder;
+}
+.a12sp2
+{
+    font-size:24px;
+    font-weight: lighter;
+    margin-left: 68%;
+    /* border: 1px solid; */
+}
+.a12div:hover .a12img
+{
+    transform: scale(1.2) rotate(5deg);
+    transition-duration: 0.5s;
+}
+.a13
+{
+    position: relative;
+    border:1px solid thistle; 
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+}
+.a13:hover .a13img
+{
+    transform: scale(1.2) rotate(5deg);
+    transition-duration: 0.5s;
+}
+.a13img
+{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.a13::after
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: red;
+    left: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+}
+.a13::before
+{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    right: -100%;
+    /* border: 1px solid; */
+    opacity: 0.8;
+    z-index: 2;
+}
+.a13:hover::after
+{
+    left: 0;
+    transition-duration: 0.5s;
+}
+.a13:hover::before
+{
+    right: 0;
+    transition-duration: 0.5s;
+    /* visibility: visible; */
+}
+.a13icon1
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius:10px;
+    left: 110px;
+    bottom: 60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.a13icon2
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius:10px;
+    right: 110px;
+    bottom:60px;
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+}
+.a13:hover .a13icon1
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a13:hover .a13icon2
+{
+    transform: translateY(-108px);
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+.a13icon1:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a13icon2:hover 
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.a13icon1:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a13icon2:hover .ic1
+{
+    cursor: pointer;
+    color: white;
+}
+.a14
+{
+    position: relative;
+    border:1px solid yellow;
+    background-image: url("13.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.a14icon
+{
+    display: block;
+    font-size: 60px;
+    color: red;
+}
+.a14hd1
+{
+    /* position: absolute; */
+    color: white;
+    text-transform: capitalize;
+    font-size: 65px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.lastpt
+{
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(179, 174, 174);
+}
+.lastptdiv
+{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.lastpt1
+{
+    width: 300px;
+    height: 80px;
+    /* border: 1px solid yellow; */
+    background-image: url("logo.png");
+    background-size: 100% 100%;
+    margin-top: 22px;
+}
+.lastpt2
+{
+  width: 400px;
+  height: 50px;
+  /* border: 1px solid;  */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
